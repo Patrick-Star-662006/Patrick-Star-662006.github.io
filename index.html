@@ -4,138 +4,217 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" href="Amiler_Jay Patrick_Logo (9).svg">
   <title>Patrick — Game Developer</title>
+
   <link rel="stylesheet" href="style.css">
+  <!-- Bootstrap 5 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
-  <!--<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous"> -->
   <link
     href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap"
     rel="stylesheet">
+
 
 </head>
 
 <body>
 
-  <!-- HEADER -->
-  <header>
-    <a href="Amiler_Jay Patrick_Logo (9).svg" class="logo" aria-label="Amiler Jay Patrick - Home">
-      <img src="Amiler_Jay Patrick_Logo (9).svg" alt="Patrick Logo" style="height: 80px;width:auto;">
-    </a>
+  <!-- NAVBAR -->
+  <nav class="navbar navbar-expand-md sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#home" aria-label="Patrick — Home">
+        <img src="Amiler_Jay Patrick_Logo (9).svg" alt="Patrick Logo">
+      </a>
 
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#mainNav"
+        aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
 
-    <nav class="navbar">
-      <a href="#home" class="active">Home</a>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#contact" class="nav-cta">Contact</a>
-    </nav>
-  </header>
+      <div class="collapse navbar-collapse justify-content-end" id="mainNav">
+        <ul class="navbar-nav align-items-md-center gap-md-1">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item nav-cta ms-md-2"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
 
   <!-- HERO -->
-  <section class="hero" id="home">
-    <div class="hero-bg"></div>
-    <div class="hero-grid">
-      <div class="hero-content">
-        <div class="hero-label">Available for work</div>
-        <h1>I'm <em>Patrick</em>,<br>Game Developer</h1>
-        <p>Aspiring game developer passionate about crafting immersive worlds and interactive experiences. Focused on
-          game mechanics, narrative design, and bringing creative visions to life.</p>
-        <div class="hero-btns">
-          <a href="#about" class="btn-primary">About Me</a>
-          <a href="#projects" class="btn-outline">View Projects</a>
+  <section id="home">
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-lg-6 order-lg-1 order-2">
+          <h1>I'm <em>Patrick</em>,<br>Game Developer</h1>
+          <p class="lead">Aspiring game developer passionate about crafting immersive worlds and interactive
+            experiences. Focused on game mechanics, narrative design, and bringing creative visions to life.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#about" class="btn-primary-custom">About Me</a>
+            <a href="#projects" class="btn-outline-custom">View Projects</a>
+          </div>
         </div>
-      </div>
-      <div class="hero-img-wrap">
-        <img src="Photo.jpg" alt="Patrick" />
+        <div class="col-lg-5 offset-lg-1 order-lg-2 order-1">
+          <div class="hero-img-wrap">
+            <img src="Photo.jpg" alt="Patrick — Game Developer">
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-
-
   <!-- ABOUT -->
   <section id="about">
-    <div class="about">
-      <div class="about-img-wrap">
-        <img src="Photo.jpg" alt="Patrick" />
-      </div>
-      <div class="about-content">
-        <div class="section-label">About Me</div>
-        <h2>Aspiring <em style="color:var(--accent)">Game</em> Developer</h2>
-        <p>I'm Patrick, a passionate game developer with a love for building rich, interactive experiences. I focus on
-          game mechanics, world-building, and the technical craft behind every playable moment.</p>
-        <p>From small indie prototypes to larger collaborative projects, I bring curiosity and dedication to every
-          build.</p>
-        <a href="#projects" class="btn-primary">View My Work</a>
+    <div class="container">
+      <div class="row align-items-center gy-5">
+        <div class="col-md-5">
+          <div class="about-img-wrap">
+            <img src="Photo.jpg" alt="Patrick">
+          </div>
+        </div>
+        <div class="col-md-6 offset-md-1">
+          <div class="section-label">About Me</div>
+          <h2>Aspiring <em>Game</em> Developer</h2>
+          <p>I'm Patrick, a passionate game developer with a love for building rich, interactive experiences. I focus on
+            game mechanics, world-building, and the technical craft behind every playable moment.</p>
+          <p class="mt-3">From small indie prototypes to larger collaborative projects, I bring curiosity and dedication
+            to every build.</p>
+          <a href="#projects" class="btn-primary-custom d-inline-block mt-4">View My Work</a>
+        </div>
       </div>
     </div>
   </section>
 
   <!-- PROJECTS -->
-  <section class="projects-section" id="projects">
-    <div class="projects-header">
-      <div>
-        <h2>Featured Projects</h2>
-      </div>
-    </div>
-    <div class="projects-grid">
-      <div class="project-card">
-        <div class="project-thumb">
-          <img src="Rectangle 4140.png" alt="project">
-        </div>
-        <div class="project-body">
-          <div class="project-tag">Python</div>
-          <h3>Tetris</h3>
-          <p>Classic Tetris as my starter project.</p>
+  <section id="projects">
+    <div class="container">
+      <div class="d-flex align-items-end justify-content-between mb-5 flex-wrap gap-3">
+        <div>
+          <div class="section-label">Portfolio</div>
+          <h2>Featured Projects</h2>
         </div>
       </div>
-      <div class="project-card">
-        <div class="project-thumb">
-          <img src="image 1.png" alt="project">
+      <div class="row g-4">
+        <!-- Card 1 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="project-card">
+            <div class="project-thumb">
+              <img src="Rectangle 4140.png" alt="Tetris project screenshot">
+            </div>
+            <div class="project-body">
+              <div class="project-tag">Python</div>
+              <h3>Tetris</h3>
+              <p>Classic Tetris rebuilt from scratch — a foundational project that sharpened game loop and collision
+                logic.</p>
+            </div>
+          </div>
         </div>
-        <div class="project-body">
-          <div class="project-tag">Python</div>
-          <h3>Space shooter</h3>
-          <p>A small space shooter game.</p>
+        <!-- Card 2 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="project-card">
+            <div class="project-thumb">
+              <img src="image 1.png" alt="Space Shooter project screenshot">
+            </div>
+            <div class="project-body">
+              <div class="project-tag">Python</div>
+              <h3>Space Shooter</h3>
+              <p>A top-down space shooter featuring enemy waves, projectile mechanics, and score tracking.</p>
+            </div>
+          </div>
         </div>
-      </div>
-      <div class="project-card">
-        <div class="project-thumb">
-          <img src="image 2.png" alt="project">
-        </div>
-        <div class="project-body">
-          <div class="project-tag">Python</div>
-          <h3>Offline Dino Game</h3>
-          <p>Recreated the No internet dino game</p>
+        <!-- Card 3 -->
+        <div class="col-md-4 col-sm-6">
+          <div class="project-card">
+            <div class="project-thumb">
+              <img src="image 2.png" alt="Offline Dino Game screenshot">
+            </div>
+            <div class="project-body">
+              <div class="project-tag">Python</div>
+              <h3>Offline Dino Game</h3>
+              <p>Faithful recreation of Chrome's no-internet dinosaur runner, with procedural obstacle generation.</p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- FOOTER -->
+  <!-- FOOTER / CONTACT -->
   <footer id="contact">
-    <div class="footer-grid">
-      <!-- Contact -->
-      <div class="footer-contact">
-        <div class="footer-col-title">Contact</div>
-        <p>
-          Amiler, Jay Patrick<br>
-          Batangas, Philippines<br>
-          <a href="mailto:amilerdiegojaypatrick@gmail.com">Email</a><br>
-          +63 XXX XXX XXXX
-        </p>
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-md-5">
+          <a href="#home" aria-label="Back to top">
+            <img src="assets/Amiler_Jay Patrick_Logo (9).svg" alt="Patrick Logo"
+              style="height:44px;width:auto;margin-bottom:1.25rem;opacity:0.85;">
+          </a>
+          <p>Game developer based in the Philippines, building interactive experiences one mechanic at a time.</p>
+        </div>
+        <div class="col-md-3 offset-md-1">
+          <div class="footer-col-title">Contact</div>
+          <p>
+            Amiler, Jay Patrick<br>
+            Batangas, Philippines<br>
+            <a href="mailto:amilerdiegojaypatrick@gmail.com">amilerdiegojaypatrick@gmail.com</a><br>
+            +63 XXX XXX XXXX
+          </p>
+        </div>
+        <div class="col-md-3">
+          <div class="footer-col-title">Links</div>
+          <ul class="footer-links">
+            <li>
+              <a href="https://www.linkedin.com/in/jay-patrick-amiler-4705bb403/" target="_blank" rel="noopener">
+                <i class="bi bi-linkedin"></i> LinkedIn
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/Patrick-Star-662006" target="_blank" rel="noopener">
+                <i class="bi bi-github"></i> GitHub
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
-
-      <div>
-        <div class="footer-col-title">Links</div>
-        <ul class="footer-links">
-          <li><a href="https://www.linkedin.com/in/jay-patrick-amiler-4705bb403/">LinkedIn</a></li>
-          <li><a href="https://github.com/Patrick-Star-662006">GitHub</a></li>
-        </ul>
+      <div class="footer-bottom d-flex flex-wrap justify-content-between gap-2">
+        <span>© 2025 Amiler Jay Patrick. All rights reserved.</span>
+        <span>Game Developer · Philippines</span>
       </div>
+    </div>
   </footer>
 
-  <!--<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script> -->
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- Smooth scroll + active nav highlight -->
+  <script>
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const target = document.querySelector(a.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth' });
+        }
+      });
+    });
+
+    const navLinks = document.querySelectorAll('.navbar-nav .nav-link');
+    const sections = document.querySelectorAll('section[id], footer[id]');
+
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          navLinks.forEach(l => l.classList.remove('active'));
+          const active = document.querySelector(`.navbar-nav a[href="#${entry.target.id}"]`);
+          if (active) active.classList.add('active');
+        }
+      });
+    }, { threshold: 0.4 });
+
+    sections.forEach(s => observer.observe(s));
+  </script>
 </body>
 
 </html>
